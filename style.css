@@ -74,6 +74,8 @@ body {
     margin-left: 10px;
     font-size: 14px;
     margin-top: 10px;
+    display: none;
+    text-shadow: #090918 1px 1px 1px;
 }
 
 .weather {
