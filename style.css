@@ -6,7 +6,6 @@
 }
 
 body {
-
     background: linear-gradient(135deg, #090918 0%, #5f758b 100%);
     background-attachment: fixed;
 }
@@ -14,11 +13,11 @@ body {
 .card {
     width: 90%;
     max-width: 470px;
-    border-radius: 20px;
+    border-radius: 80px;
     margin: 100px auto 0;
     background: linear-gradient(135deg, #5f758b, #090918);
     color: #fff;
-    box-shadow: 1px 4px 8px rgba(0.2, 0.2, 0.2, 0.2);
+    box-shadow: 1px 1x 10px rgba(0.5, 0.2, 0.5, 0.5);
     padding: 40px 35px;
     text-align: center;
 }
@@ -31,7 +30,6 @@ body {
 }
 
 .search input {
-
     padding: 10px 25px;
     border: none;
     border-radius: 50px;
@@ -46,7 +44,7 @@ body {
 }
 
 .search button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: none;
     border-radius: 50px;
     outline: none;
@@ -56,11 +54,9 @@ body {
     background: #090918;
     cursor: pointer;
     transition: all 0.3s;
-    cursor: pointer;
 }
 
-.search button:hover {
-
+button:hover {
     background: #fff;
 }
 
@@ -75,11 +71,10 @@ body {
     font-size: 14px;
     margin-top: 10px;
     display: none;
-    text-shadow: #090918 1px 1px 1px;
 }
 
 .weather {
-    display: none;
+    display: block;
 }
 
 .weather-icon {
@@ -92,18 +87,16 @@ body {
     font-weight: 500;
 }
 
-.description {
+.discription {
     font-size: 20px;
     font-weight: 400;
     margin-top: -10px;
-
 }
 
 .temp {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 400;
     margin-top: 30px;
-
 }
 
 .weather h2 {
@@ -117,24 +110,68 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    margin-top: 100px;
-    font-size: 20px;
+    margin-top: 70px;
+    font-size: 16px;
+    border: #fff;
+}
+
+.details2 {
+    display: flex;
+    position: static;
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 70px;
+    font-size: 18px;
+    border: #fff;
+
 }
 
 .col {
-    display: flex;
+    width: 200px;
+    height: 120px;
+    margin: 5px;
+    display: block;
     align-items: center;
     text-align: center;
+    padding: 10px;
+    border: #fff 1px solid;
+    border-radius: 20px;
+    box-shadow: #090918 1px 1px 10px;
+}
+
+.col2 {
+    width: 100%;
+    height: 120px;
+    margin: 5px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: #fff 1px solid;
+    border-radius: 20px;
+    box-shadow: #090918 1px 1px 10px;
 }
 
 .col img {
     width: 40px;
     margin-right: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.col2 img {
+    width: 40px;
+    margin-right: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 .humidity,
-.wind {
-    font-size: 25px;
+.wind,
+.Pressure {
+    font-size: 20px;
     margin-top: -6px;
     margin-bottom: 6px;
+    display: block;
 }

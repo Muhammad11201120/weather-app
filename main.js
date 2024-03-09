@@ -39,6 +39,7 @@ async function ResponseStatus(response) {
         const data = await response.json();
         console.log(data);
         document.querySelector(".city").innerText = data.name;
+        weatherDescription.innerText = data.description;
         document.querySelector(".temp").innerText = Math.round(data.main.temp) + "°C";
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
@@ -50,7 +51,8 @@ async function ResponseStatus(response) {
     }
 }
 //function to get weather data
-async function getWeather(city = "London") {
+async function getWeather(city = `London`) {
+
     const response = await fetch(ApiLink + city + "&appid=" + ApiKey);
     ResponseStatus(response);
 }
