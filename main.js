@@ -43,6 +43,7 @@ async function ResponseStatus(response) {
         document.querySelector(".temp").innerText = Math.round(data.main.temp) + "°C";
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+        document.querySelector(".Pressure").innerText = data.main.pressure + " hPa";
 
         LoadingweatherImg(data);
         LoadWeatherDescription(data);
