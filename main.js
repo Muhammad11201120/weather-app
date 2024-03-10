@@ -41,6 +41,8 @@ async function ResponseStatus(response) {
         document.querySelector(".city").innerText = data.name;
         weatherDescription.innerText = data.description;
         document.querySelector(".temp").innerText = Math.round(data.main.temp) + "°C";
+        document.querySelector(".max-temp").innerText = Math.round(data.main.temp_max) + "°C";
+        document.querySelector(".min-temp").innerText = Math.round(data.main.temp_min) + "°C";
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
         document.querySelector(".Pressure").innerText = data.main.pressure + " hPa";

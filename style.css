@@ -121,10 +121,20 @@ button:hover {
     width: 100%;
     align-items: center;
     padding: 0 20px;
-    margin-top: 70px;
+    margin-top: 10px;
     font-size: 18px;
     border: #fff;
 
+}
+
+.details3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: #fff;
 }
 
 .col {
@@ -135,7 +145,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     border: #fff 1px solid;
     border-radius: 20px;
     box-shadow: #090918 1px 1px 10px;
@@ -149,29 +159,31 @@ button:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     border: #fff 1px solid;
     border-radius: 20px;
     box-shadow: #090918 1px 1px 10px;
 }
 
 .col img {
-    width: 40px;
-    margin-right: 10px;
+    width: 45px;
+    margin-right: 5px;
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .col2 img {
-    width: 40px;
-    margin-right: 10px;
+    width: 45px;
+    margin-right: 5px;
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .humidity,
 .wind,
-.Pressure {
+.Pressure,
+.max-temp,
+.min-temp {
     font-size: 20px;
     margin-top: -6px;
     margin-bottom: 6px;
