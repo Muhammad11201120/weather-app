@@ -39,7 +39,7 @@ async function ResponseStatus(response) {
         const data = await response.json();
         console.log(data);
         document.querySelector(".city").innerText = data.name;
-        weatherDescription.innerText = data.description;
+        weatherDescription.innerText = data.weather.description;
         document.querySelector(".temp").innerText = Math.round(data.main.temp) + "°C";
         document.querySelector(".max-temp").innerText = Math.round(data.main.temp_max) + "°C";
         document.querySelector(".min-temp").innerText = Math.round(data.main.temp_min) + "°C";
